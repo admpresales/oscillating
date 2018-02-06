@@ -54,5 +54,10 @@ public class UnstableTest extends UnitTestClassBase {
         Reporter.reportEvent("Always Passes","<h1>Your faborite test</h1>", Status.Passed);
     }
 
+    @Ignore ("Not ready yet") @Test
+    public void skippedTest () throws GeneralLeanFtException{
+        System.out.println("Skipped test");
+    }
+
 
 }
