@@ -49,4 +49,10 @@ public class UnstableTest extends UnitTestClassBase {
         Assert.assertEquals(1, x);
     }
 
+    @Test
+    public void alwaysPasses() throws GeneralLeanFtException, ReportException{
+        Reporter.reportEvent("Always Passes","<h1>Your faborite test</h1>", Status.Passed);
+    }
+
+
 }
