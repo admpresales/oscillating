@@ -42,6 +42,7 @@ public class UnstableTest extends UnitTestClassBase {
     public void someTimesPassesSomeTimesFails() throws GeneralLeanFtException, ReportException {
         Random rand = new Random();
         int x = rand.nextInt(2)+1;
+        System.out.println("Using: "+x);
 
         Reporter.reportEvent("Check 1 =1","<br><H1>Simple Number Check</H1><br><b>Ensure 1=1</b>", Status.Passed);
         Verify.areEqual(1,x);
