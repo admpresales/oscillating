@@ -36,14 +36,17 @@ public class PayPalTest extends UnitTestClassBase {
 
     @Test
     public void testPayPal() throws GeneralLeanFtException, ReportException {
+        System.out.println(">>>> running: "+new Object(){}.getClass().getEnclosingMethod().getName());
         Reporter.reportEvent("PayPal  is good","", Status.Passed);
     }
     @Test
-    public void alwaysFails() throws GeneralLeanFtException {
+    public void alwaysFailsPayPal() throws GeneralLeanFtException {
+        System.out.println(">>>> running: "+new Object(){}.getClass().getEnclosingMethod().getName());
        Verify.areEqual(1,2);
     }
     @Test
-    public void alwaysTrowsException() {
+    public void alwaysThrowsExceptionPayPal() {
+        System.out.println(">>>> running: "+new Object(){}.getClass().getEnclosingMethod().getName());
         Assert.assertEquals(1,2);
     }
 }
