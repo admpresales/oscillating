@@ -113,6 +113,6 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-        <testSourceDirectory>src</testSourceDirectory>
+        <testSourceDirectory>src/main/java</testSourceDirectory>
     </build>
 </project>
