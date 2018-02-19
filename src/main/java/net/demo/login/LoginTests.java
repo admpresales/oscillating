@@ -1,5 +1,6 @@
 package net.demo.login;
 
+import net.demo.LogMessages;
 import org.junit.*;
 import com.hp.lft.sdk.*;
 
@@ -32,19 +33,19 @@ public class LoginTests extends UnitTestClassBase {
 
     @Test
     public void simpleEmailLogin() throws GeneralLeanFtException {
-        System.out.println(">>>> running: "+new Object(){}.getClass().getEnclosingMethod().getName());
+        new LogMessages().logMethod(new Object(){});
     }
     @Test
     public void forgotUsernameLogin() throws GeneralLeanFtException {
-        System.out.println(">>>> running"+new Object(){}.getClass().getEnclosingMethod().getName());
+        new LogMessages().logMethod(new Object(){});
     }
     @Test
     public void forgotPasswordLogin() throws GeneralLeanFtException {
-        System.out.println(">>>> running"+new Object(){}.getClass().getEnclosingMethod().getName());
+        new LogMessages().logMethod(new Object(){});
     }
     @Test
     public void simpleUsernameLogin() throws GeneralLeanFtException {
-        System.out.println(">>>> running"+new Object(){}.getClass().getEnclosingMethod().getName());
+        new LogMessages().logMethod(new Object(){});
     }
 
 }

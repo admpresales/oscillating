@@ -39,12 +39,13 @@ public class StableTests extends UnitTestClassBase {
 
     @Test
     public void alwaysPasses() throws GeneralLeanFtException, ReportException {
-        System.out.println(">>>> running: "+new Object(){}.getClass().getEnclosingMethod().getName());
+        new LogMessages().logMethod(new Object(){});
         Reporter.reportEvent("Always Passes","<h1>Your faborite test</h1>", Status.Passed);
+
     }
 
     @Ignore("Not ready yet") @Test
     public void skippedTest () throws GeneralLeanFtException{
-        System.out.println(">>>> running: "+new Object(){}.getClass().getEnclosingMethod().getName());
+        new LogMessages().logMethod(new Object());
     }
 }

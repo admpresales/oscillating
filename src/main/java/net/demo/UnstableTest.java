@@ -20,6 +20,7 @@ public class UnstableTest extends UnitTestClassBase {
     public static void setUpBeforeClass() throws Exception {
         instance = new UnstableTest();
         globalSetup(UnstableTest.class);
+        new LogMessages().logMethod(new Object(){});
     }
 
     @AfterClass
@@ -37,7 +38,7 @@ public class UnstableTest extends UnitTestClassBase {
 
     @Test
     public void someTimesPassesSomeTimesFails() throws ReportException {
-        System.out.println(">>>> running: "+new Object(){}.getClass().getEnclosingMethod().getName());
+        new LogMessages().logMethod(new Object(){});
         Random rand = new Random();
         int x = rand.nextInt(2)+1;
 

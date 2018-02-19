@@ -3,6 +3,7 @@ package net.demo.paypal;
 import com.hp.lft.report.ReportException;
 import com.hp.lft.report.Reporter;
 import com.hp.lft.report.Status;
+import net.demo.LogMessages;
 import org.junit.*;
 import com.hp.lft.sdk.*;
 import com.hp.lft.verifications.*;
@@ -36,17 +37,17 @@ public class PayPalTest extends UnitTestClassBase {
 
     @Test
     public void testPayPal() throws GeneralLeanFtException, ReportException {
-        System.out.println(">>>> running: "+new Object(){}.getClass().getEnclosingMethod().getName());
+        new LogMessages().logMethod(new Object(){});
         Reporter.reportEvent("PayPal  is good","", Status.Passed);
     }
     @Test
     public void alwaysFailsPayPal() throws GeneralLeanFtException {
-        System.out.println(">>>> running: "+new Object(){}.getClass().getEnclosingMethod().getName());
+        new LogMessages().logMethod(new Object(){});
        Verify.areEqual(1,2);
     }
     @Test
     public void alwaysThrowsExceptionPayPal() {
-        System.out.println(">>>> running: "+new Object(){}.getClass().getEnclosingMethod().getName());
+        new LogMessages().logMethod(new Object(){});
         Assert.assertEquals(1,2);
     }
 }
