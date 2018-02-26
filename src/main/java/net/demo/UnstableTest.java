@@ -20,7 +20,6 @@ public class UnstableTest extends UnitTestClassBase {
     public static void setUpBeforeClass() throws Exception {
         instance = new UnstableTest();
         globalSetup(UnstableTest.class);
-        new LogMessages().logMethod(new Object(){});
     }
 
     @AfterClass
@@ -44,11 +43,13 @@ public class UnstableTest extends UnitTestClassBase {
 
         System.out.println("Using: "+x);
 
-        Reporter.reportEvent("Check 1 =1","<br><H1>Simple Number Check</H1><br><b>Ensure 1=1</b>", Status.Passed);
-        Verify.areEqual(1,x);
+        if (Verify.areEqual(1,x)) {
+            Reporter.reportEvent("Check for 1 =1","<br><H1>Simple Number Check</H1><br><b>Ensure 1=1</b>",Status.Passed);
+        } else {
+            Reporter.reportEvent("Check for 1 =1","<br><H1>Simple Number Check</H1><br><b>Ensure 1=1</b>",Status.Failed);
+        }
+
         Assert.assertEquals(1, x);
     }
-
-
 
 }
