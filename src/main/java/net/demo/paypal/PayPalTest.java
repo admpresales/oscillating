@@ -46,9 +46,9 @@ public class PayPalTest extends UnitTestClassBase {
        Verify.areEqual(9,10);
         
         //This will force the error as a Junit so it will propegate up to Octane
-       if (Reporter.getStatus() == Status.Failed){
-            Assert.fail();
-       }
+       //if (Reporter.getStatus() == Status.Failed){
+       //     Assert.fail();
+       //}
     }
     @Test
     public void alwaysThrowsExceptionPayPal() {
