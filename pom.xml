@@ -17,25 +17,25 @@
         <dependency>
             <groupId>com.hp.lft</groupId>
             <artifactId>sdk</artifactId>
-            <version>RELEASE</version>
+            <version>14.2.0</version>
         </dependency>
 
         <dependency>
             <groupId>com.hp.lft</groupId>
             <artifactId>report</artifactId>
-            <version>RELEASE</version>
+            <version>14.2.0</version>
         </dependency>
 
         <dependency>
             <groupId>com.hp.lft</groupId>
             <artifactId>unittesting</artifactId>
-            <version>RELEASE</version>
+            <version>14.2.0</version>
         </dependency>
 
         <dependency>
             <groupId>com.hp.lft</groupId>
             <artifactId>verifications</artifactId>
-            <version>RELEASE</version>
+            <version>14.2.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
