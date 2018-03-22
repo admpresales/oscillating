@@ -36,18 +36,35 @@ public class PayPalTest extends UnitTestClassBase {
     }
 
     @Test
-    public void testPayPal() throws GeneralLeanFtException, ReportException {
+    public void alwaysPassesPayPal() throws GeneralLeanFtException, ReportException {
         new LogMessages().logMethod(new Object(){});
         Reporter.reportEvent("PayPal  is good","", Status.Passed);
     }
     @Test
     public void alwaysFailsPayPal() throws GeneralLeanFtException {
         new LogMessages().logMethod(new Object(){});
-       Verify.areEqual(1,2);
+       Verify.areEqual(9,10);
+        
+        //This will force the error as a Junit so it will propegate up to Octane
+       //if (Reporter.getStatus() == Status.Failed){
+       //     Assert.fail();
+       //}
     }
     @Test
     public void alwaysThrowsExceptionPayPal() {
         new LogMessages().logMethod(new Object(){});
+        //this will always throw an exception error and if not trapped
+        //using a try/catch then it will stop the execution
         Assert.assertEquals(1,2);
+    }
+    @Test
+    public void alwaysThrowsExceptionButCaughtPayPal() {
+        new LogMessages().logMethod(new Object() {
+        });
+        try {
+            Assert.assertEquals(1, 2);
+        } catch (AssertionError e) {
+            System.out.println("Error from Assert: " + e.toString());
+        }
     }
 }

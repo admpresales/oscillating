@@ -1,0 +1,49 @@
+1. Run these lines from the terminal window of IntelliJ: View->Tools Windows->Terminal
+    git config --global user.name "sally"
+    git config --global user.email "sally.smith@nga.net"
+
+2 . =====> DELETE THIS LINE <=======
+
+3. Commit using the comment below.  DO NOT push
+    defect#2059 - corndog fixed
+
+====================================================
+1. Run these lines from the terminal window of IntelliJ: View->Tools Windows->Terminal
+    git config --global user.name "tom"
+    git config --global user.email "tom.jones@nga.net"
+
+2 . =====> DELETE THIS LINE <=======
+
+3. Commit using the comment below.  DO NOT push
+    defect#2060 - corndog cooks
+    user story#2036 - little red riding hood
+
+====================================================
+1. Run these lines from the terminal window of IntelliJ: View->Tools Windows->Terminal
+    git config --global user.name "morgan"
+    git config --global user.email "morgan.hoover@nga.net"
+
+2 . =====> DELETE THIS LINE <=======
+
+3. Commit using the comment below.  DO NOT push
+    defect#2063 - corndog yummy
+
+====================================================
+1. Run these lines from the terminal window of IntelliJ: View->Tools Windows->Terminal
+    git config --global user.name "frank"
+    git config --global user.email "frank.alberga@nga.net"
+
+2 . =====> DELETE THIS LINE <=======
+
+3. Commit using the comment below.  DO NOT push
+    user story#2229 - 3 little pigs
+
+====================================================
+1. Run these lines from the terminal window of IntelliJ: View->Tools Windows->Terminal
+    git config --global user.name "kristi"
+    git config --global user.email "kristi.bjornaby@nga.net"
+
+2 . =====> DELETE THIS LINE <=======
+
+3. Commit using the comment below.  DO NOT push
+    user story#2295 - one flew over the cookoos nest
