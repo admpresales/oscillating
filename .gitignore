@@ -25,8 +25,9 @@ hs_err_pid*
 ### Example user template template
 ### Example user template
 
-# IntelliJ project files
-.idea
+# IntelliJ project files - misc.xml protected for Octane integration.
+.idea/*
+!.idea/misc.xml
 *.iml
 out
 gen### Eclipse template
